@@ -4,6 +4,10 @@
   <img src="docs/assets/kdenlive-logo.svg" alt="Kdenlive Logo" width="200"/>
 </p>
 
+<p align="center">
+  <strong>📖 Acesse o Portal de Documentação Oficial: <a href="https://caeslucio.github.io/GCES-Kdenlive-relatorios/">caeslucio.github.io/GCES-Kdenlive-relatorios</a></strong>
+</p>
+
 Este repositório reúne a documentação desenvolvida durante a disciplina **Gestão da Configuração e Evolução de Software (GCES)** da Universidade de Brasília (UnB).
 
 Nosso objetivo é estudar e aplicar práticas de **gestão de configuração, controle de versões, evolução de software e colaboração em projetos reais de código aberto.**
