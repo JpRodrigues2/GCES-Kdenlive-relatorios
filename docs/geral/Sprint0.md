@@ -43,7 +43,7 @@ Sprint 0 dedicada à fundação da arquitetura de engenharia de software da equi
 | Karolina Vieira Barbosa          | Criação da conta KDE Invent, documentação e build do kdenlive                                                                                                  | [Diário de Bordo](../contribuicoes_individuais/KarolinaVieira-202045820/sprint0.md)                | Concluído    |
 | Letícia da Silva Monteiro        | –                                                                                                     | [Diário de Bordo](../contribuicoes_individuais/exemplo/Sprint0.md)                | Pendente    |
 | Lucas Mendonça Arruda            | Criação da conta Kde, Execução da build do Kdenlive, documentação do fluxo e do guia de contribuição da comunidade do Kdenlive                                                                                                     | [Diário de Bordo](../contribuicoes_individuais/LucasArruda-231035464/Sprint0.md)                | Concluído    |
-| Gustavo Oki de Freitas Rodrigues | –                                                                                                     | [Diário de Bordo](../contribuicoes_individuais/exemplo/Sprint0.md)                | Pendente    |
+| Gustavo Oki de Freitas Rodrigues | Criação da conta KDE, preparação e execução da build e estudo documentação do KDEnlive                                                                                                     | [Diário de Bordo](../contribuicoes_individuais/exemplo/Sprint0.md)                | Concluído    |
 
 *(Nota: Substitua os links `/exemplo/Sprint0.md` individuais pela pasta respectiva assim que ela for criada)*
 
