@@ -1,4 +1,4 @@
-# Diário de Bordo – [Nome do(a) Aluno(a)]
+# Diário de Bordo – Karolina Vieira
 
 **Disciplina:** Gestão de Configuração e Evolução de Software  
 **Equipe:** GCES 2026.1 – Kdenlive  
