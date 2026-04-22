@@ -1,15 +1,16 @@
 # Diário de Bordo – Lucas
 
-**Disciplina:** GERÊNCIA DE CONFIGURAÇÃO E EVOLUÇÃO DE SOFTWARE
-**Equipe:** GCES 2026.1 – Kdenlive
+**Disciplina:** GERÊNCIA DE CONFIGURAÇÃO E EVOLUÇÃO DE SOFTWARE  
+**Equipe:** GCES 2026.1 – Kdenlive  
 **Comunidade/Projeto de Software Livre:** [Kdenlive](https://invent.kde.org/multimedia/kdenlive)  
-**Sprint:** Sprint 0 (07/04/2026 – 21/04/2026)
-**Matrícula:** 231035464 
+**Sprint:** Sprint 0 (07/04/2026 – 21/04/2026)  
+**Matrícula:** 231035464   
 **GitHub:** [@lucasarruda](https://github.com/lucasarruda9)  
 **KDE Invent:** [@lucasma](https://invent.kde.org/lucasma)
+
 ---
 
-## 1. Resumo da Sprint
+## 1. Resumo da Sprint 0 (07/04/2026 - 21/04/2026)
 
 Nesta sprint, o foco principal foi o estabelecimento do ambiente de desenvolvimento e a imersão na cultura e processos da comunidade KDE. O Kdenlive é um editor de vídeo gratuito e open source, desenvolvido principalmente em **C++**, que utiliza o **MLT Framework** como motor central de processamento multimídia responsável por decodificação, transições e renderização. Além de utilizar bibliotecas como **frei0r** para efeitos de vídeo e **LADSPA** para áudio.
 
@@ -20,6 +21,13 @@ O projeto possui uma separação entre:
 
 ### 1.2 Ambiente de Desenvolvimento (Build)
 Tentei realizar o build inicialmente no Ubuntu 22.04, mas a versão era inferior à exigida para as dependências atuais (Ubuntu 25.10). Explorei o Craft e o KDE-Builder, mas ambos apresentaram falhas críticas de configuração. No caso do Craft, o processo era interrompido por um erro 404 ao tentar acessar o repositório do plugin bigSh0t; mesmo corrigindo manualmente o link para o repositório oficial, a ferramenta falhava ao tentar buscar a branch master, que havia sido renomeada para main no novo destino. Já o KDE-Builder falhou devido a conflitos de versão no sistema base. A solução definitiva foi subir um container Ubuntu Rolling (25.04) via Docker, onde instalei manualmente todas as dependências de Qt6, KF6 e MLT necessárias para a compilação.
+
+
+![Tela do Kdelive após Build correta 1](../../assets/contribuicoes_individuais/sprint0/build_rodando1.png)
+*Figura 1: Tela do Kdenlive após Build correta.*
+
+![Tela do Kdelive após Build 2](../../assets/contribuicoes_individuais/sprint0/build_rodando2.png)
+*Figura 2: Tela de edição do Kdelive.*
 
 **Comando de execução com display via Docker:**
 ```bash
@@ -39,7 +47,7 @@ Descobri que a KDE possui uma comunidade ativa. Os principais canais de contato 
 A comunidade do Kdenlive segue um modelo de versionamento baseado em três tipos principais de branches:
 
 - **master**: Versão de desenvolvimento mais recente do Kdenlive.
-- **release/**: Branches de lançamento (ex: release/25.04). São criadas a partir do master em momentos de estabilização do ciclo de desenvolvimento. Entram em fase de *feature freeze* e *string freeze*, recebendo apenas correções de bugs e ajustes de tradução até o lançamento final.
+- **release/**: usadas para preparar versões de lançamento. Elas são criadas a partir da master quando o projeto entra em fase de estabilização.
 - **work/**: Branches de trabalho utilizadas para desenvolvimento de novas funcionalidades. Mudanças são feitas nessas branches antes de serem submetidas via Merge Request para revisão e eventual integração no master.
 
 ---
@@ -95,6 +103,9 @@ O projeto possui aproximadamente 55 labels adicionais usadas para categorizar o 
 
 E dentre muitas outras. Essas labels ajudam a organizar o desenvolvimento do Kdenlive, facilitando a triagem, priorização e distribuição das tarefas dentro da comunidade.
 
+![Imagem das Labels](../../assets/contribuicoes_individuais/sprint0/labels.png)
+*Figura 3: Tela de labels*
+
 ## 2. Atividades Realizadas
 
 | Data  | Atividade                                   | Tipo | Referência | Status    |
@@ -121,7 +132,18 @@ E dentre muitas outras. Essas labels ajudam a organizar o desenvolvimento do Kde
 
 - **Build do Projeto:** As dificuldades de build impactaram significativamente o ambiente de desenvolvimento, principalmente devido à incompatibilidade de versões e falhas em ferramentas de automação como Craft e KDE-Builder para Ubuntu 22.04. Isso exigiu a migração para um ambiente containerizado via Docker.
 
+![Craft - Link quebrado pro repositório do bigSh0t](../../assets/contribuicoes_individuais/sprint0/craft_link_falha1.png)
+*Figura 4: Tela de Link quebrado pro repositório do bigSh0t.*
+
+![Link correto para bigSh0t](../../assets/contribuicoes_individuais/sprint0/craft_link_falha2.png)
+*Figura 5: Tela de Link correto para bigSh0t.*
+
+![Falha do Craft em achar Master](../../assets/contribuicoes_individuais/sprint0/craft_master_falha.jpeg)
+
+*Figura 6: Tela de Falha do Craft em achar Master.*
+
 - **Adaptação ao Ecossistema KDE Invent:** Também houve dificuldade na adaptação ao fluxo de trabalho específico da comunidade KDE. Como o GitLab não é uma ferramenta que utilizo com frequência, o processo de configuração da KDE Identity, compreensão da interface do KDE Invent e execução correta do fork do projeto exigiu atenção adicional. Além disso, o entendimento do fluxo de contribuição foi um desafio inicial, pois foi necessário compreender como o fork interage com os repositórios remotos locais para garantir que as alterações sejam enviadas corretamente por meio de Merge Request, respeitando as políticas de revisão e integridade exigidas pela comunidade.
+
 ---
 
 ## 5. Aprendizados
